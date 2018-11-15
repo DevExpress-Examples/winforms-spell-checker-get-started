@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/XtraSpellCheckerGetStarted/Form1.cs) (VB: [Form1.vb](./VB/XtraSpellCheckerGetStarted/Form1.vb))
+<!-- default file list end -->
 # XtraSpellChecker - Getting Started Lesson 1
 
 
