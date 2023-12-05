@@ -1,5 +1,7 @@
-﻿Namespace XtraSpellCheckerGetStarted
-    Partial Public Class Form1
+Namespace XtraSpellCheckerGetStarted
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,25 +12,25 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim optionsSpelling6 As New DevExpress.XtraSpellChecker.OptionsSpelling()
-            Dim optionsSpelling7 As New DevExpress.XtraSpellChecker.OptionsSpelling()
-            Dim optionsSpelling8 As New DevExpress.XtraSpellChecker.OptionsSpelling()
-            Dim optionsSpelling3 As New DevExpress.XtraSpellChecker.OptionsSpelling()
-            Dim optionsSpelling4 As New DevExpress.XtraSpellChecker.OptionsSpelling()
+            Dim optionsSpelling6 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
+            Dim optionsSpelling7 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
+            Dim optionsSpelling8 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
+            Dim optionsSpelling3 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
+            Dim optionsSpelling4 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
             Me.textBox1 = New System.Windows.Forms.TextBox()
             Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
             Me.textEdit1 = New DevExpress.XtraEditors.TextEdit()
@@ -36,8 +38,8 @@
             Me.richEditControl1 = New DevExpress.XtraRichEdit.RichEditControl()
             Me.simpleButton1 = New DevExpress.XtraEditors.SimpleButton()
             Me.spellChecker1 = New DevExpress.XtraSpellChecker.SpellChecker(Me.components)
-            CType(Me.textEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.memoEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.textEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.memoEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' textBox1
@@ -92,6 +94,7 @@
             Me.simpleButton1.Size = New System.Drawing.Size(89, 23)
             Me.simpleButton1.TabIndex = 5
             Me.simpleButton1.Text = "Check Spelling"
+            AddHandler Me.simpleButton1.Click, New System.EventHandler(AddressOf Me.simpleButton1_Click)
             ' 
             ' spellChecker1
             ' 
@@ -111,22 +114,26 @@
             Me.Controls.Add(Me.textBox1)
             Me.Name = "Form1"
             Me.Text = "XtraSpellChecker Getting Started"
-            CType(Me.textEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.memoEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.textEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.memoEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private textBox1 As System.Windows.Forms.TextBox
+
         Private richTextBox1 As System.Windows.Forms.RichTextBox
+
         Private textEdit1 As DevExpress.XtraEditors.TextEdit
+
         Private memoEdit1 As DevExpress.XtraEditors.MemoEdit
+
         Private richEditControl1 As DevExpress.XtraRichEdit.RichEditControl
-        Private WithEvents simpleButton1 As DevExpress.XtraEditors.SimpleButton
+
+        Private simpleButton1 As DevExpress.XtraEditors.SimpleButton
+
         Private spellChecker1 As DevExpress.XtraSpellChecker.SpellChecker
     End Class
 End Namespace
-
