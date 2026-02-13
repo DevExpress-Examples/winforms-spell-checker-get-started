@@ -20,7 +20,7 @@ This example demonstrates how to use the [SpellChecker](https://docs.devexpress.
 
 * [Lesson 1 - Add Spell Checking to Your Application](https://docs.devexpress.com/WindowsForms/114002/controls-and-libraries/spell-checker/getting-started/lesson-1-add-spell-checking-to-your-application)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-spell-checker-get-started&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-spell-checker-get-started&~~~was_helpful=no)
 
